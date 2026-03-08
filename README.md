@@ -247,12 +247,11 @@ ExtentReports (HTML Dashboard)
 
 ## 👨‍💻 Author
 
-**STA Mini Project 9a**
+**STA Mini Project**
 Data-Driven Framework using Selenium + TestNG + Apache POI
 Amazon India (amazon.in) · March 2026
 
+By
+**Abdul Hameed M**
+
 ---
-
-## 📄 License
-
-This project is for educational purposes — STA Mini Project.
