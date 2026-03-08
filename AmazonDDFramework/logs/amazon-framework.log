@@ -1,0 +1,113 @@
+2026-03-08 21:53:24 INFO  com.framework.utils.ExtentReportManager - Extent report initialized: reports/AmazonTestReport_2026-03-08_21-53-24.html
+2026-03-08 21:53:24 INFO  com.framework.base.BaseTest - === Amazon Data-Driven Test Suite Started ===
+2026-03-08 21:53:25 INFO  com.framework.utils.ExcelUtils - Reading 12 rows from sheet: SearchData
+2026-03-08 21:53:25 INFO  com.framework.utils.TestDataProvider - Loaded 12 Amazon search test cases
+2026-03-08 21:53:25 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:53:29 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:53:31 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:53:35 INFO  com.framework.pages.AmazonHomePage - Searching for: iPhone 15
+2026-03-08 21:53:36 INFO  com.framework.pages.AmazonHomePage - Search submitted for: iPhone 15
+2026-03-08 21:53:39 INFO  com.framework.pages.AmazonHomePage - Search results found: 19
+2026-03-08 21:54:09 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:54:09 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:54:09 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:54:10 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:54:11 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:54:14 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:54:18 INFO  com.framework.pages.AmazonHomePage - Searching for: Samsung Galaxy S24
+2026-03-08 21:54:22 INFO  com.framework.pages.AmazonHomePage - Search submitted for: Samsung Galaxy S24
+2026-03-08 21:54:24 INFO  com.framework.pages.AmazonHomePage - Search results found: 20
+2026-03-08 21:54:55 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:54:55 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:54:55 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:54:55 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:54:56 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:55:02 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:55:09 INFO  com.framework.pages.AmazonHomePage - Searching for: laptop
+2026-03-08 21:55:10 INFO  com.framework.pages.AmazonHomePage - Search submitted for: laptop
+2026-03-08 21:55:13 INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+2026-03-08 21:55:43 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:55:43 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:55:43 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:55:44 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:55:45 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:55:46 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:55:49 INFO  com.framework.pages.AmazonHomePage - Searching for: Nike shoes
+2026-03-08 21:55:53 INFO  com.framework.pages.AmazonHomePage - Search submitted for: Nike shoes
+2026-03-08 21:55:55 INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+2026-03-08 21:56:25 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:56:25 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:56:25 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:56:26 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:56:27 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:56:28 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:56:32 INFO  com.framework.pages.AmazonHomePage - Searching for: boAt earphones
+2026-03-08 21:56:33 INFO  com.framework.pages.AmazonHomePage - Search submitted for: boAt earphones
+2026-03-08 21:56:36 INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+2026-03-08 21:57:06 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:57:06 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:57:06 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:57:06 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:57:07 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:57:09 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:57:13 INFO  com.framework.pages.AmazonHomePage - Searching for: kurta
+2026-03-08 21:57:17 INFO  com.framework.pages.AmazonHomePage - Search submitted for: kurta
+2026-03-08 21:57:19 INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+2026-03-08 21:57:50 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:57:50 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:57:50 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:57:50 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:57:51 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:57:53 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:57:59 INFO  com.framework.pages.AmazonHomePage - Searching for: pressure cooker
+2026-03-08 21:58:04 INFO  com.framework.pages.AmazonHomePage - Search submitted for: pressure cooker
+2026-03-08 21:58:06 INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+2026-03-08 21:58:36 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:58:36 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:58:36 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:58:37 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:58:38 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:58:39 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:58:42 INFO  com.framework.pages.AmazonHomePage - Searching for: Harry Potter books
+2026-03-08 21:58:46 INFO  com.framework.pages.AmazonHomePage - Search submitted for: Harry Potter books
+2026-03-08 21:58:48 INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+2026-03-08 21:59:19 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 21:59:19 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 21:59:19 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 21:59:19 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 21:59:20 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 21:59:21 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 21:59:25 INFO  com.framework.pages.AmazonHomePage - Searching for: yoga mat
+2026-03-08 21:59:30 INFO  com.framework.pages.AmazonHomePage - Search submitted for: yoga mat
+2026-03-08 21:59:32 INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+2026-03-08 22:00:02 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 22:00:02 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 22:00:02 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 22:00:03 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 22:00:04 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 22:00:05 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 22:00:11 INFO  com.framework.pages.AmazonHomePage - Searching for: face wash
+2026-03-08 22:00:17 INFO  com.framework.pages.AmazonHomePage - Search submitted for: face wash
+2026-03-08 22:00:19 INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+2026-03-08 22:00:49 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 22:00:49 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 22:00:49 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 22:00:50 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 22:00:51 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 22:00:52 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 22:00:56 INFO  com.framework.pages.AmazonHomePage - Searching for: xyzabc123notaproduct
+2026-03-08 22:00:59 INFO  com.framework.pages.AmazonHomePage - Search submitted for: xyzabc123notaproduct
+2026-03-08 22:01:01 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 22:01:01 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 22:01:01 INFO  com.framework.base.BaseTest - Setting up browser: chrome
+2026-03-08 22:01:02 INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+2026-03-08 22:01:03 INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+2026-03-08 22:01:08 INFO  com.framework.pages.AmazonHomePage - Searching for: wireless mouse
+2026-03-08 22:01:09 INFO  com.framework.pages.AmazonHomePage - Search submitted for: wireless mouse
+2026-03-08 22:01:12 INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+2026-03-08 22:01:42 ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+2026-03-08 22:01:42 INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+2026-03-08 22:01:42 INFO  com.framework.base.BaseTest - Closing browser
+2026-03-08 22:01:43 INFO  com.framework.utils.ExtentReportManager - Report flushed to: reports/AmazonTestReport_2026-03-08_21-53-24.html
+2026-03-08 22:01:43 INFO  com.framework.base.BaseTest - === Amazon Data-Driven Test Suite Completed ===
+2026-03-08 22:01:43 INFO  com.framework.base.BaseTest - Report saved to: reports/AmazonTestReport_2026-03-08_21-53-24.html

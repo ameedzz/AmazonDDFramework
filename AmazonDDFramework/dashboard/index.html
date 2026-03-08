@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon DD Framework — Test Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --amazon: #FF6600;
+    --amazon-dark: #CC5200;
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: #2a2a3a;
+    --text: #e8e8f0;
+    --muted: #6b6b8a;
+    --pass: #00e676;
+    --fail: #ff1744;
+    --skip: #ffab00;
+    --info: #40c4ff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid noise texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(255,102,0,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,102,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container { max-width: 1400px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+
+  /* Header */
+  header {
+    padding: 32px 0 24px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .logo-area { display: flex; align-items: center; gap: 16px; }
+
+  .logo-badge {
+    width: 48px; height: 48px;
+    background: var(--amazon);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+    box-shadow: 0 0 24px rgba(255,102,0,0.4);
+  }
+
+  .header-title h1 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--text);
+  }
+
+  .header-title p {
+    font-size: 13px;
+    color: var(--muted);
+    font-family: 'Space Mono', monospace;
+    margin-top: 2px;
+  }
+
+  .header-meta {
+    display: flex; gap: 24px; align-items: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .live-badge {
+    display: flex; align-items: center; gap: 6px;
+    color: var(--pass);
+    font-size: 11px;
+  }
+
+  .live-dot {
+    width: 6px; height: 6px;
+    background: var(--pass);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.4); }
+  }
+
+  /* Stats Row */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: default;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--amazon);
+  }
+
+  .stat-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+  }
+
+  .stat-card.total::after { background: var(--amazon); }
+  .stat-card.passed::after { background: var(--pass); }
+  .stat-card.failed::after { background: var(--fail); }
+  .stat-card.skipped::after { background: var(--skip); }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 12px;
+  }
+
+  .stat-value {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+
+  .stat-card.total .stat-value { color: var(--amazon); }
+  .stat-card.passed .stat-value { color: var(--pass); }
+  .stat-card.failed .stat-value { color: var(--fail); }
+  .stat-card.skipped .stat-value { color: var(--skip); }
+
+  .stat-sub {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: 'Space Mono', monospace;
+  }
+
+  /* Middle Row */
+  .middle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  .card-title {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 20px;
+  }
+
+  /* Donut Chart */
+  .donut-wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .donut-svg { flex-shrink: 0; }
+
+  .donut-legend { flex: 1; }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .legend-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .legend-label { color: var(--muted); font-family: 'Space Mono', monospace; font-size: 11px; }
+  .legend-val { margin-left: auto; font-weight: 600; font-size: 14px; }
+
+  /* Pass rate bar */
+  .pass-rate-number {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--pass);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .pass-bar-track {
+    height: 8px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+
+  .pass-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--pass), #00bfa5);
+    border-radius: 4px;
+    transition: width 1.5s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  .pass-rate-sub { font-size: 12px; color: var(--muted); font-family: 'Space Mono', monospace; }
+
+  /* Category bars */
+  .cat-bar-item { margin-bottom: 14px; }
+  .cat-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-family: 'Space Mono', monospace;
+  }
+  .cat-bar-name { color: var(--text); }
+  .cat-bar-count { color: var(--muted); }
+  .cat-bar-track { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+  .cat-bar-fill { height: 100%; border-radius: 3px; background: var(--amazon); }
+
+  /* Test Table */
+  .table-wrap {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 32px;
+  }
+
+  .table-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .table-title {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+  }
+
+  .filter-tabs {
+    display: flex;
+    gap: 8px;
+  }
+
+  .filter-tab {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    transition: all 0.2s;
+  }
+
+  .filter-tab.active, .filter-tab:hover {
+    background: var(--amazon);
+    border-color: var(--amazon);
+    color: #000;
+  }
+
+  table { width: 100%; border-collapse: collapse; }
+
+  th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    background: var(--surface2);
+    border-bottom: 1px solid var(--border);
+  }
+
+  td {
+    padding: 14px 24px;
+    border-bottom: 1px solid rgba(42,42,58,0.5);
+    font-size: 13px;
+  }
+
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: rgba(255,102,0,0.03); }
+
+  .keyword-cell { font-weight: 600; color: var(--text); }
+  .category-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-family: 'Space Mono', monospace;
+    background: rgba(255,102,0,0.1);
+    color: var(--amazon);
+    border: 1px solid rgba(255,102,0,0.2);
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+  }
+
+  .status-badge.pass { background: rgba(0,230,118,0.1); color: var(--pass); border: 1px solid rgba(0,230,118,0.2); }
+  .status-badge.fail { background: rgba(255,23,68,0.1); color: var(--fail); border: 1px solid rgba(255,23,68,0.2); }
+  .status-badge.skip { background: rgba(255,171,0,0.1); color: var(--skip); border: 1px solid rgba(255,171,0,0.2); }
+
+  .desc-cell { color: var(--muted); font-size: 12px; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .footer-stack { display: flex; gap: 16px; }
+  .stack-tag {
+    padding: 3px 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 10px;
+  }
+
+  @media (max-width: 900px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .middle-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <div class="logo-badge">A↯</div>
+        <div class="header-title">
+          <h1>Amazon Data-Driven Framework</h1>
+          <p>Selenium + TestNG + Apache POI · amazon.in · STA Mini Project 9a</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <div class="live-badge">
+          <div class="live-dot"></div>
+          DASHBOARD LIVE
+        </div>
+        <span id="timestamp"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat-card total">
+      <div class="stat-label">Total Tests</div>
+      <div class="stat-value" id="total">12</div>
+      <div class="stat-sub">from AmazonTestData.xlsx</div>
+    </div>
+    <div class="stat-card passed">
+      <div class="stat-label">Passed</div>
+      <div class="stat-value" id="passed">—</div>
+      <div class="stat-sub">search results found</div>
+    </div>
+    <div class="stat-card failed">
+      <div class="stat-label">Failed</div>
+      <div class="stat-value" id="failed">—</div>
+      <div class="stat-sub">assertions failed</div>
+    </div>
+    <div class="stat-card skipped">
+      <div class="stat-label">Skipped</div>
+      <div class="stat-value" id="skipped">—</div>
+      <div class="stat-sub">not yet executed</div>
+    </div>
+  </div>
+
+  <!-- Middle Row -->
+  <div class="middle-grid">
+
+    <!-- Donut -->
+    <div class="card">
+      <div class="card-title">Pass / Fail / Skip Ratio</div>
+      <div class="donut-wrap">
+        <svg class="donut-svg" width="120" height="120" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#1a1a26" stroke-width="18"/>
+          <!-- Pass arc -->
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#00e676" stroke-width="18"
+            stroke-dasharray="0 314" stroke-dashoffset="78.5"
+            id="arc-pass" style="transition: stroke-dasharray 1.5s ease; transform: rotate(-90deg); transform-origin: 60px 60px;"/>
+          <!-- Fail arc -->
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#ff1744" stroke-width="18"
+            stroke-dasharray="0 314" stroke-dashoffset="78.5"
+            id="arc-fail" style="transition: stroke-dasharray 1.5s ease 0.3s; transform: rotate(-90deg); transform-origin: 60px 60px;"/>
+          <!-- Skip arc -->
+          <circle cx="60" cy="60" r="50" fill="none" stroke="#ffab00" stroke-width="18"
+            stroke-dasharray="0 314" stroke-dashoffset="78.5"
+            id="arc-skip" style="transition: stroke-dasharray 1.5s ease 0.6s; transform: rotate(-90deg); transform-origin: 60px 60px;"/>
+          <text x="60" y="56" text-anchor="middle" fill="#e8e8f0" font-size="18" font-family="Syne" font-weight="800" id="donut-center">—</text>
+          <text x="60" y="70" text-anchor="middle" fill="#6b6b8a" font-size="9" font-family="Space Mono">PASS RATE</text>
+        </svg>
+        <div class="donut-legend">
+          <div class="legend-item">
+            <div class="legend-dot" style="background:var(--pass)"></div>
+            <span class="legend-label">PASS</span>
+            <span class="legend-val" style="color:var(--pass)" id="leg-pass">—</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:var(--fail)"></div>
+            <span class="legend-label">FAIL</span>
+            <span class="legend-val" style="color:var(--fail)" id="leg-fail">—</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:var(--skip)"></div>
+            <span class="legend-label">SKIP</span>
+            <span class="legend-val" style="color:var(--skip)" id="leg-skip">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pass Rate -->
+    <div class="card">
+      <div class="card-title">Pass Rate</div>
+      <div class="pass-rate-number" id="pass-pct">—%</div>
+      <div class="pass-bar-track">
+        <div class="pass-bar-fill" id="pass-bar" style="width:0%"></div>
+      </div>
+      <div class="pass-rate-sub" id="pass-sub">Run tests to see results</div>
+    </div>
+
+    <!-- Category Breakdown -->
+    <div class="card">
+      <div class="card-title">Tests by Category</div>
+      <div id="cat-bars">
+        <div class="cat-bar-item">
+          <div class="cat-bar-label"><span class="cat-bar-name">Electronics</span><span class="cat-bar-count">4</span></div>
+          <div class="cat-bar-track"><div class="cat-bar-fill" style="width:100%"></div></div>
+        </div>
+        <div class="cat-bar-item">
+          <div class="cat-bar-label"><span class="cat-bar-name">Clothing / Fashion</span><span class="cat-bar-count">2</span></div>
+          <div class="cat-bar-track"><div class="cat-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="cat-bar-item">
+          <div class="cat-bar-label"><span class="cat-bar-name">Books / Sports</span><span class="cat-bar-count">2</span></div>
+          <div class="cat-bar-track"><div class="cat-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="cat-bar-item">
+          <div class="cat-bar-label"><span class="cat-bar-name">Kitchen / Beauty</span><span class="cat-bar-count">2</span></div>
+          <div class="cat-bar-track"><div class="cat-bar-fill" style="width:50%"></div></div>
+        </div>
+        <div class="cat-bar-item">
+          <div class="cat-bar-label"><span class="cat-bar-name">Invalid / Other</span><span class="cat-bar-count">2</span></div>
+          <div class="cat-bar-track"><div class="cat-bar-fill" style="width:25%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Test Table -->
+  <div class="table-wrap">
+    <div class="table-header">
+      <div class="table-title">Test Cases — Amazon Search Data</div>
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterTable('all', this)">All (12)</button>
+        <button class="filter-tab" onclick="filterTable('pass', this)">Pass</button>
+        <button class="filter-tab" onclick="filterTable('fail', this)">Fail</button>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Search Keyword</th>
+          <th>Category</th>
+          <th>Expected</th>
+          <th>Min Results</th>
+          <th>Status</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody id="test-table-body">
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-stack">
+      <span class="stack-tag">Java 21</span>
+      <span class="stack-tag">Maven 3.9</span>
+      <span class="stack-tag">Selenium 4</span>
+      <span class="stack-tag">TestNG 7</span>
+      <span class="stack-tag">Apache POI 5</span>
+      <span class="stack-tag">ExtentReports 5</span>
+    </div>
+    <span>STA Mini Project 9a · amazon.in · Data-Driven Framework</span>
+  </footer>
+</div>
+
+<script>
+const testData = [
+  { id:1, keyword:"iPhone 15", category:"Electronics", expected:"pass", minResults:5, description:"Search for iPhone 15 smartphone" },
+  { id:2, keyword:"Samsung Galaxy S24", category:"Electronics", expected:"pass", minResults:5, description:"Search for Samsung flagship phone" },
+  { id:3, keyword:"laptop", category:"Computers", expected:"pass", minResults:10, description:"Generic laptop search" },
+  { id:4, keyword:"Nike shoes", category:"Footwear", expected:"pass", minResults:5, description:"Search for Nike brand shoes" },
+  { id:5, keyword:"boAt earphones", category:"Electronics", expected:"pass", minResults:5, description:"Search for boAt audio products" },
+  { id:6, keyword:"kurta", category:"Clothing", expected:"pass", minResults:10, description:"Search for traditional Indian wear" },
+  { id:7, keyword:"pressure cooker", category:"Kitchen", expected:"pass", minResults:5, description:"Search for kitchen appliances" },
+  { id:8, keyword:"Harry Potter books", category:"Books", expected:"pass", minResults:3, description:"Search for Harry Potter series" },
+  { id:9, keyword:"yoga mat", category:"Sports", expected:"pass", minResults:5, description:"Search for fitness equipment" },
+  { id:10, keyword:"face wash", category:"Beauty", expected:"pass", minResults:10, description:"Search for skincare products" },
+  { id:11, keyword:"xyzabc123notaproduct", category:"Invalid", expected:"fail", minResults:0, description:"Search for non-existent product" },
+  { id:12, keyword:"wireless mouse", category:"Computers", expected:"pass", minResults:5, description:"Search for computer accessories" },
+];
+
+// Status map — update after running tests!
+const statusMap = {
+  1:"pending",2:"pending",3:"pending",4:"pending",
+  5:"pending",6:"pending",7:"pending",8:"pending",
+  9:"pending",10:"pending",11:"pending",12:"pending"
+};
+
+let currentFilter = 'all';
+
+function renderTable(filter) {
+  const tbody = document.getElementById('test-table-body');
+  tbody.innerHTML = '';
+  testData.forEach(t => {
+    const status = statusMap[t.id] || 'pending';
+    if (filter !== 'all' && status !== filter && !(filter === 'fail' && status === 'pending')) {
+      if (filter === 'pass' && status !== 'pass') return;
+      if (filter === 'fail' && status !== 'fail') return;
+    }
+    if (filter === 'pass' && status !== 'pass') return;
+    if (filter === 'fail' && status !== 'fail') return;
+
+    const statusHTML = status === 'pass'
+      ? '<span class="status-badge pass">● PASS</span>'
+      : status === 'fail'
+      ? '<span class="status-badge fail">● FAIL</span>'
+      : '<span class="status-badge skip">○ PENDING</span>';
+
+    tbody.innerHTML += `
+      <tr>
+        <td style="color:var(--muted);font-family:'Space Mono',monospace;font-size:12px">${String(t.id).padStart(2,'0')}</td>
+        <td class="keyword-cell">${t.keyword}</td>
+        <td><span class="category-chip">${t.category}</span></td>
+        <td style="font-family:'Space Mono',monospace;font-size:12px;color:${t.expected==='pass'?'var(--pass)':'var(--fail)'}">${t.expected.toUpperCase()}</td>
+        <td style="font-family:'Space Mono',monospace;font-size:12px;color:var(--muted)">${t.minResults}+</td>
+        <td>${statusHTML}</td>
+        <td class="desc-cell">${t.description}</td>
+      </tr>`;
+  });
+}
+
+function filterTable(filter, btn) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderTable(filter);
+}
+
+function updateStats() {
+  const vals = Object.values(statusMap);
+  const passed = vals.filter(v => v === 'pass').length;
+  const failed = vals.filter(v => v === 'fail').length;
+  const skipped = vals.filter(v => v === 'pending').length;
+  const total = testData.length;
+  const pct = total > 0 ? Math.round((passed / total) * 100) : 0;
+
+  document.getElementById('passed').textContent = passed || '—';
+  document.getElementById('failed').textContent = failed || '—';
+  document.getElementById('skipped').textContent = skipped;
+  document.getElementById('pass-pct').textContent = passed > 0 ? pct + '%' : '—%';
+  document.getElementById('leg-pass').textContent = passed;
+  document.getElementById('leg-fail').textContent = failed;
+  document.getElementById('leg-skip').textContent = skipped;
+
+  if (passed > 0) {
+    document.getElementById('pass-bar').style.width = pct + '%';
+    document.getElementById('pass-sub').textContent = passed + ' of ' + total + ' tests passed';
+    document.getElementById('donut-center').textContent = pct + '%';
+
+    const circ = 2 * Math.PI * 50;
+    const passArc = (passed / total) * circ;
+    const failArc = (failed / total) * circ;
+    const skipArc = (skipped / total) * circ;
+
+    document.getElementById('arc-pass').setAttribute('stroke-dasharray', `${passArc} ${circ}`);
+    const failOffset = -(passArc - circ/4);
+    document.getElementById('arc-fail').setAttribute('stroke-dasharray', `${failArc} ${circ}`);
+    document.getElementById('arc-fail').style.strokeDashoffset = circ/4 - passArc;
+  }
+}
+
+// Timestamp
+document.getElementById('timestamp').textContent = new Date().toLocaleString('en-IN');
+
+// Init
+renderTable('all');
+updateStats();
+
+// Tip: To update results after running tests, change statusMap values above
+// e.g. 1:"pass", 2:"pass", 11:"fail" etc.
+</script>
+</body>
+</html>

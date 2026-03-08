@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-08T21:53:24 IST" name="Amazon Data-Driven Framework Suite" finished-at="2026-03-08T22:01:42 IST" duration-ms="497896">
+    <groups>
+    </groups>
+    <test started-at="2026-03-08T21:53:24 IST" name="Amazon Search Tests - Chrome" finished-at="2026-03-08T22:01:42 IST" duration-ms="497896">
+      <class name="com.framework.tests.AmazonSearchTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:53:24 IST" name="setUpReport" finished-at="2026-03-08T21:53:24 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpReport -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:53:25 IST" name="setUp" finished-at="2026-03-08T21:53:33 IST" duration-ms="7252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:53:33 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:54:09 IST" duration-ms="36834" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone 15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for iPhone 15 smartphone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:09 IST" name="logTestResult" finished-at="2026-03-08T21:54:10 IST" duration-ms="526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:10 IST" name="tearDown" finished-at="2026-03-08T21:54:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:10 IST" name="setUp" finished-at="2026-03-08T21:54:16 IST" duration-ms="5682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:16 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:54:55 IST" duration-ms="39045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Samsung Galaxy S24]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for Samsung flagship phone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:55 IST" name="logTestResult" finished-at="2026-03-08T21:54:55 IST" duration-ms="333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:55 IST" name="tearDown" finished-at="2026-03-08T21:54:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:54:55 IST" name="setUp" finished-at="2026-03-08T21:55:04 IST" duration-ms="9307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:55:04 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:55:43 IST" duration-ms="38762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[laptop]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Computers]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Generic laptop search]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:55:43 IST" name="logTestResult" finished-at="2026-03-08T21:55:44 IST" duration-ms="502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:55:44 IST" name="tearDown" finished-at="2026-03-08T21:55:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:55:44 IST" name="setUp" finished-at="2026-03-08T21:55:48 IST" duration-ms="4458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:55:48 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:56:25 IST" duration-ms="37263" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nike shoes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Footwear]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for Nike brand shoes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:56:25 IST" name="logTestResult" finished-at="2026-03-08T21:56:26 IST" duration-ms="403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:56:26 IST" name="setUp" finished-at="2026-03-08T21:56:30 IST" duration-ms="4093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:56:26 IST" name="tearDown" finished-at="2026-03-08T21:56:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:56:30 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:57:06 IST" duration-ms="36265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[boAt earphones]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for boAt audio products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:06 IST" name="logTestResult" finished-at="2026-03-08T21:57:06 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:06 IST" name="tearDown" finished-at="2026-03-08T21:57:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:06 IST" name="setUp" finished-at="2026-03-08T21:57:11 IST" duration-ms="4519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:11 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:57:50 IST" duration-ms="38757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kurta]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Clothing]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for traditional Indian wear]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:50 IST" name="logTestResult" finished-at="2026-03-08T21:57:50 IST" duration-ms="437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:50 IST" name="setUp" finished-at="2026-03-08T21:57:55 IST" duration-ms="4344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:50 IST" name="tearDown" finished-at="2026-03-08T21:57:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:57:55 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:58:36 IST" duration-ms="41752" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pressure cooker]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kitchen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for kitchen appliances]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:58:36 IST" name="logTestResult" finished-at="2026-03-08T21:58:37 IST" duration-ms="397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:58:37 IST" name="setUp" finished-at="2026-03-08T21:58:41 IST" duration-ms="4732" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:58:37 IST" name="tearDown" finished-at="2026-03-08T21:58:37 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:58:41 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T21:59:19 IST" duration-ms="37316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Harry Potter books]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Books]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for Harry Potter series]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:59:19 IST" name="logTestResult" finished-at="2026-03-08T21:59:19 IST" duration-ms="399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:59:19 IST" name="tearDown" finished-at="2026-03-08T21:59:19 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:59:19 IST" name="setUp" finished-at="2026-03-08T21:59:23 IST" duration-ms="4280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T21:59:23 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T22:00:02 IST" duration-ms="39012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[yoga mat]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for fitness equipment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:02 IST" name="logTestResult" finished-at="2026-03-08T22:00:03 IST" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:03 IST" name="setUp" finished-at="2026-03-08T22:00:07 IST" duration-ms="4353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:03 IST" name="tearDown" finished-at="2026-03-08T22:00:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:07 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T22:00:49 IST" duration-ms="42199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[face wash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Beauty]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for skincare products]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:49 IST" name="logTestResult" finished-at="2026-03-08T22:00:50 IST" duration-ms="346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:50 IST" name="tearDown" finished-at="2026-03-08T22:00:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:50 IST" name="setUp" finished-at="2026-03-08T22:00:54 IST" duration-ms="4380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:00:54 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T22:01:01 IST" duration-ms="6922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyzabc123notaproduct]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[fail]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for non-existent product]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:01 IST" name="logTestResult" finished-at="2026-03-08T22:01:01 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:01 IST" name="tearDown" finished-at="2026-03-08T22:01:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:01 IST" name="setUp" finished-at="2026-03-08T22:01:05 IST" duration-ms="4133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:05 IST" name="testAmazonProductSearch" description="Verify Amazon search returns results for various product keywords" data-provider="amazonSearchData" finished-at="2026-03-08T22:01:42 IST" duration-ms="36311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wireless mouse]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronics]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pass]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Search for computer accessories]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAmazonProductSearch -->
+        <test-method is-config="true" signature="logTestResult(org.testng.ITestResult)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:42 IST" name="logTestResult" finished-at="2026-03-08T22:01:42 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAmazonProductSearch status=SUCCESS method=AmazonSearchTest.testAmazonProductSearch(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:42 IST" name="tearDown" finished-at="2026-03-08T22:01:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.framework.tests.AmazonSearchTest@4d722ac9]" started-at="2026-03-08T22:01:42 IST" name="tearDownReport" finished-at="2026-03-08T22:01:43 IST" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.framework.tests.AmazonSearchTest -->
+    </test> <!-- Amazon Search Tests - Chrome -->
+  </suite> <!-- Amazon Data-Driven Framework Suite -->
+</testng-results>

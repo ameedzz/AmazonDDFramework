@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="500.229" tests="12" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\acer\.cache\selenium\chromedriver\win64\145.0.7632.117\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework\target\test-classes;C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework\target\classes;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\acer\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\acer\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\acer\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\acer\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\acer\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\acer\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\acer\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\acer\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\acer\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\acer\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\acer\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\acer\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\acer\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\acer\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\acer\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\acer\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\acer\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\acer\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\acer\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\acer\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\acer\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\acer\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\acer\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\acer\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\acer\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\acer\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\acer\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\acer\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\acer\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\acer\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\acer\AppData\Local\Temp\surefire5601334837232664153\surefirebooter-20260308215322556_3.jar C:\Users\acer\AppData\Local\Temp\surefire5601334837232664153 2026-03-08T21-53-22_361-jvmRun1 surefire-20260308215322556_1tmp surefire_0-20260308215322556_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework\target\test-classes;C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework\target\classes;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\acer\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\acer\.m2\repository\com\google\guava\guava\33.0.0-jre\guava-33.0.0-jre.jar;C:\Users\acer\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\acer\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\acer\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\acer\.m2\repository\org\checkerframework\checker-qual\3.41.0\checker-qual-3.41.0.jar;C:\Users\acer\.m2\repository\com\google\errorprone\error_prone_annotations\2.23.0\error_prone_annotations-2.23.0.jar;C:\Users\acer\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\acer\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\acer\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\acer\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\acer\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\acer\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\acer\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\acer\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\acer\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\acer\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\acer\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\acer\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\acer\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\acer\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\acer\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\acer\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\acer\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\acer\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\acer\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\acer\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\acer\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\acer\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\acer\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\acer\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\acer\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\acer\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\acer\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\acer\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\acer\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\acer\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\acer\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\acer"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Users\acer\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\acer\AppData\Local\Temp\surefire5601334837232664153\surefirebooter-20260308215322556_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.10+7-LTS"/>
+    <property name="user.name" value="acer"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.10+7"/>
+    <property name="localRepository" value="C:\Users\acer\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\acer\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.10"/>
+    <property name="user.dir" value="C:\Users\acer\Downloads\AmazonDDFramework_v4_fixed\AmazonDDFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\acer\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\acer\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Users\acer\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.3\bin;C:\Users\acer\Downloads\apache-maven-3.9.13-bin\apache-maven-3.9.13\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.10+7-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testAmazonProductSearch[iPhone 15, Electronics, pass, 5, Search for iPhone 15 smartphone](1)" classname="com.framework.tests.AmazonSearchTest" time="36.831">
+    <system-out><![CDATA[21:53:24.771 [main] INFO  com.framework.utils.ExtentReportManager - Extent report initialized: reports/AmazonTestReport_2026-03-08_21-53-24.html
+21:53:24.775 [main] INFO  com.framework.base.BaseTest - === Amazon Data-Driven Test Suite Started ===
+21:53:25.807 [main] INFO  com.framework.utils.ExcelUtils - Reading 12 rows from sheet: SearchData
+21:53:25.828 [main] INFO  com.framework.utils.TestDataProvider - Loaded 12 Amazon search test cases
+21:53:25.849 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:53:29.540 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:53:31.092 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:53:35.918 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: iPhone 15
+21:53:36.759 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: iPhone 15
+21:53:39.748 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 19
+21:54:09.931 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Mar 08, 2026 9:53:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:53:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[Samsung Galaxy S24, Electronics, pass, 5, Search for Samsung flagship phone](2)" classname="com.framework.tests.AmazonSearchTest" time="39.045">
+    <system-out><![CDATA[21:54:09.941 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:54:09.941 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:54:10.466 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:54:11.804 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:54:14.137 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:54:18.863 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: Samsung Galaxy S24
+21:54:22.661 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: Samsung Galaxy S24
+21:54:24.699 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 20
+21:54:55.193 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:54:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:54:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[laptop, Computers, pass, 10, Generic laptop search](3)" classname="com.framework.tests.AmazonSearchTest" time="38.763">
+    <system-out><![CDATA[21:54:55.195 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:54:55.195 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:54:55.529 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:54:56.496 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:55:02.835 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:55:09.425 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: laptop
+21:55:10.241 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: laptop
+21:55:13.559 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+21:55:43.598 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:54:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:54:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[Nike shoes, Footwear, pass, 5, Search for Nike brand shoes](4)" classname="com.framework.tests.AmazonSearchTest" time="37.262">
+    <system-out><![CDATA[21:55:43.600 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:55:43.600 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:55:44.100 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:55:45.033 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:55:46.548 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:55:49.938 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: Nike shoes
+21:55:53.502 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: Nike shoes
+21:55:55.531 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+21:56:25.822 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:55:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:55:44 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[boAt earphones, Electronics, pass, 5, Search for boAt audio products](5)" classname="com.framework.tests.AmazonSearchTest" time="36.28">
+    <system-out><![CDATA[21:56:25.822 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:56:25.822 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:56:26.227 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:56:27.118 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:56:28.304 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:56:32.384 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: boAt earphones
+21:56:33.212 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: boAt earphones
+21:56:36.330 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+21:57:06.585 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:56:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:56:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[kurta, Clothing, pass, 10, Search for traditional Indian wear](6)" classname="com.framework.tests.AmazonSearchTest" time="38.773">
+    <system-out><![CDATA[21:57:06.601 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:57:06.601 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:57:06.994 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:57:07.944 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:57:09.506 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:57:13.195 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: kurta
+21:57:17.942 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: kurta
+21:57:19.977 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+21:57:50.270 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:57:07 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:57:07 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[pressure cooker, Kitchen, pass, 5, Search for kitchen appliances](7)" classname="com.framework.tests.AmazonSearchTest" time="41.753">
+    <system-out><![CDATA[21:57:50.288 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:57:50.288 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:57:50.724 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:57:51.778 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:57:53.058 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:57:59.659 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: pressure cooker
+21:58:04.644 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: pressure cooker
+21:58:06.676 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+21:58:36.820 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:57:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:57:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[Harry Potter books, Books, pass, 3, Search for Harry Potter series](8)" classname="com.framework.tests.AmazonSearchTest" time="37.315">
+    <system-out><![CDATA[21:58:36.821 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:58:36.821 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:58:37.218 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:58:38.200 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:58:39.947 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:58:42.946 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: Harry Potter books
+21:58:46.933 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: Harry Potter books
+21:58:48.957 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+21:59:19.266 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:58:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:58:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[yoga mat, Sports, pass, 5, Search for fitness equipment](9)" classname="com.framework.tests.AmazonSearchTest" time="39.008">
+    <system-out><![CDATA[21:59:19.266 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+21:59:19.266 [main] INFO  com.framework.base.BaseTest - Closing browser
+21:59:19.665 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+21:59:20.592 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+21:59:21.938 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+21:59:25.895 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: yoga mat
+21:59:30.663 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: yoga mat
+21:59:32.695 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+22:00:02.957 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 9:59:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 9:59:20 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[face wash, Beauty, pass, 10, Search for skincare products](10)" classname="com.framework.tests.AmazonSearchTest" time="42.2">
+    <system-out><![CDATA[22:00:02.958 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+22:00:02.959 [main] INFO  com.framework.base.BaseTest - Closing browser
+22:00:03.297 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+22:00:04.417 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+22:00:05.633 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+22:00:11.454 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: face wash
+22:00:17.507 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: face wash
+22:00:19.543 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 60
+22:00:49.848 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 10:00:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 10:00:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[xyzabc123notaproduct, Invalid, fail, 0, Search for non-existent product](11)" classname="com.framework.tests.AmazonSearchTest" time="6.92">
+    <system-out><![CDATA[22:00:49.849 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+22:00:49.850 [main] INFO  com.framework.base.BaseTest - Closing browser
+22:00:50.196 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+22:00:51.166 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+22:00:52.563 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+22:00:56.042 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: xyzabc123notaproduct
+22:00:59.490 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: xyzabc123notaproduct
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 10:00:51 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 10:00:51 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="testAmazonProductSearch[wireless mouse, Electronics, pass, 5, Search for computer accessories](12)" classname="com.framework.tests.AmazonSearchTest" time="36.323">
+    <system-out><![CDATA[22:01:01.498 [main] INFO  com.framework.base.BaseTest - TEST PASSED: testAmazonProductSearch
+22:01:01.498 [main] INFO  com.framework.base.BaseTest - Closing browser
+22:01:01.831 [main] INFO  com.framework.base.BaseTest - Setting up browser: chrome
+22:01:02.787 [main] INFO  com.framework.base.BaseTest - Browser launched successfully: chrome
+22:01:03.960 [main] INFO  com.framework.pages.AmazonHomePage - Navigated to Amazon India
+22:01:08.269 [main] INFO  com.framework.pages.AmazonHomePage - Searching for: wireless mouse
+22:01:09.097 [main] INFO  com.framework.pages.AmazonHomePage - Search submitted for: wireless mouse
+22:01:12.129 [main] INFO  com.framework.pages.AmazonHomePage - Search results found: 22
+22:01:42.274 [main] ERROR com.framework.pages.AmazonHomePage - Could not get product title: Expected condition failed: waiting for presence of element located by: By.cssSelector: h2 a span (tried for 30 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Mar 08, 2026 10:01:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 145
+Mar 08, 2026 10:01:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 145.0.7632.160. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
